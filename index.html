@@ -1,152 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <br>
-    <!-- Basic Page Needs
+
+<head>
+  <br>
+  <!-- Basic Page Needs
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>AIpparel</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <title>AIpparel</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
+  <!-- FONT
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <!-- CSS
+  <!-- CSS
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/footable.standalone.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/footable.standalone.min.css">
 
-    <!-- Favicon
+  <!-- Favicon
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!-- Google icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-86869673-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+  <!-- Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-86869673-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-    <!-- Slider -->
-    <link rel="stylesheet" href="css/dics.css">
-    <script src="js/dics.js"></script>
+  <!-- Slider -->
+  <link rel="stylesheet" href="css/dics.css">
+  <script src="js/dics.js"></script>
 
-    <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
-    <style>
-      img {
-          display: block;
-      }
+  <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
+  <style>
+    img {
+      display: block;
+    }
 
-      .column-50 {
-          float: left;
-          width: 50%;
-      }
-      .row-50:after {
-          content: "";
-          display: table;
-          clear: both;
-      }
+    .column-50 {
+      float: left;
+      width: 50%;
+    }
 
-      .floating-teaser {
-          float: left;
-          width: 30%;
-          text-align: center;
-          padding: 15px;
-      }
-      .venue strong {
-          color: #99324b;
-      }
+    .row-50:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-      .benchmark {
-          width: 100%;
-          max-width: 960px;
-          overflow: scroll;
-          overflow-y: hidden;
-      }
+    .floating-teaser {
+      float: left;
+      width: 30%;
+      text-align: center;
+      padding: 15px;
+    }
 
-    </style>
-  </head>
-  <body>
+    .venue strong {
+      color: #99324b;
+    }
 
-    <!-- Primary Page Layout
+    .benchmark {
+      width: 100%;
+      max-width: 960px;
+      overflow: scroll;
+      overflow-y: hidden;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-      <h4 style="text-align:center">AIpparel: A Large Multimodal Generative Model for Digital Garments</h4>
-      <p align="center", style="margin-bottom:12px;">
-        <a class="simple" href="https://georgenakayama.github.io/">Kiyohiro Nakayama</a><sup>*, 1</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://janackermann.info/">Jan Ackermann</a><sup>*, 2</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://kesdogan.github.io/">Timur Levent Kesdogan</a><sup>*, 2</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://y-zheng18.github.io/">Yang Zheng</a><sup>1</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://korosteleva.com/">Maria Korosteleva</a><sup>2</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a><sup>2</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a><sup>1</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://www.guandaoyang.com/">Guandao Yang</a><sup>1</sup>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="simple" href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a><sup>1</sup>
-      </p>
+  <div class="container">
+    <h4 style="text-align:center">AIpparel: A Large Multimodal Generative Model for Digital Garments</h4>
+    <p align="center" , style="margin-bottom:12px;">
+      <a class="simple" href="https://georgenakayama.github.io/">Kiyohiro Nakayama</a><sup>*, 1</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://janackermann.info/">Jan Ackermann</a><sup>*, 2</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://kesdogan.github.io/">Timur Levent Kesdogan</a><sup>*, 2</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://y-zheng18.github.io/">Yang Zheng</a><sup>1</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://korosteleva.com/">Maria Korosteleva</a><sup>2</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a><sup>2</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a><sup>1</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://www.guandaoyang.com/">Guandao Yang</a><sup>1</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a><sup>1</sup>
+    </p>
 
-      <p align="center" style="margin-bottom:20px;">
-        <sup>1</sup>Stanford University
-        <span style="display:inline-block; width: 32px"></span>
-        <sup>2</sup>ETH Zürich
-      </p>
+    <p align="center" style="margin-bottom:20px;">
+      <sup>1</sup>Stanford University
+      <span style="display:inline-block; width: 32px"></span>
+      <sup>2</sup>ETH Zürich
+    </p>
 
-      <!-- <div class="venue">
+    <!-- <div class="venue">
         <p align="center"> International Conference on Computer Vision (ICCV), 2023 </p>
       </div> -->
 
+    <figure>
+      <img src="images/teaser-v6.png" style="width:100%"></img>
+      <!-- <br> -->
+    </figure>
+    <div class="caption">
+      <b>AIpparel</b> is a multimodal generative model for digital garments trained by fine-tuning a large multimodal
+      model on a custom
+      sewing pattern dataset using a novel tokenization scheme for these patterns. AIpparel generates complex, diverse,
+      high-quality sewing
+      patterns based on multimodal inputs, such as text and images, and it unlocks new applications such as
+      language-instructed sewing pattern
+      editing. The generated sewing patterns can be directly used to simulate the corresponding 3D garments.
+      <br>
+      <br>
+    </div>
+    <video width="100%" controls autoplay loop>
+      <source src="videos/brighter.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+
+      <h5>Abstract</h5>
+      <p align="justify">
+        Apparel is essential to human life, offering protection, mirroring cultural identities, and showcasing personal
+        style.
+        Yet, the creation of garments remains a time-consuming process, largely due to the manual work involved in
+        designing them.
+        To simplify this process, we introduce AIpparel, a large multimodal model for generating and editing sewing
+        patterns.
+        Our model fine-tunes state-of-the-art large multimodal models (LMMs) on a custom-curated large-scale dataset of
+        over 120,000 unique garments,
+        each with multimodal annotations including text, images, and sewing patterns.
+        Additionally, we propose a novel tokenization scheme that concisely encodes these complex sewing patterns so
+        that LLMs can learn to predict them efficiently.
+        AIpparel achieves state-of-the-art performance in single-modal tasks, including text-to-garment and
+        image-to-garment prediction,
+        and it enables novel multimodal garment generation applications such as interactive garment editing.
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <div class="section">
+      <h5>Method</h5>
       <figure>
-        <img src="images/teaser-v6.png" style="width:100%"></img>
+        <img src="images/method_figure.jpg" style="width:100%"></img>
         <!-- <br> -->
       </figure>
       <div class="caption">
-        <b>AIpparel</b> is a multimodal generative model for digital garments trained by fine-tuning a large multimodal model on a custom
-        sewing pattern dataset using a novel tokenization scheme for these patterns. AIpparel generates complex, diverse, high-quality sewing
-        patterns based on multimodal inputs, such as text and images, and it unlocks new applications such as language-instructed sewing pattern
-        editing. The generated sewing patterns can be directly used to simulate the corresponding 3D garments.
+        <b>AIpparel </b>uses a novel sewing pattern tokenizer (light blue region) to tokenize each panel into a set of
+        special
+        tokens (light green region). Panel vertex positions and 3D transformations are incorporated using positional
+        embeddings (colored arrows) to the tokens. <b>AIpparel</b> takes in multimodal inputs, such as images and texts
+        (light orange region), to output sewing patterns using autoregressive sampling (light grey region). Finally, the
+        output is decoded to produce simulation-ready sewing patterns (light pink region).
         <br>
-          <br>
+        <br>
       </div>
-      <video width="100%" controls autoplay loop>
-        <source src="videos/brighter.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
-        
-        <h5>Abstract</h5>
-        <p align="justify">
-          Apparel is essential to human life, offering protection, mirroring cultural identities, and showcasing personal style. 
-          Yet, the creation of garments remains a time-consuming process, largely due to the manual work involved in designing them. 
-          To simplify this process, we introduce AIpparel, a large multimodal model for generating and editing sewing patterns. 
-          Our model fine-tunes state-of-the-art large multimodal models (LMMs) on a custom-curated large-scale dataset of over 120,000 unique garments, 
-          each with multimodal annotations including text, images, and sewing patterns. 
-          Additionally, we propose a novel tokenization scheme that concisely encodes these complex sewing patterns so that LLMs can learn to predict them efficiently. 
-          AIpparel achieves state-of-the-art performance in single-modal tasks, including text-to-garment and image-to-garment prediction, 
-          and it enables novel multimodal garment generation applications such as interactive garment editing.
-          <br>
-          <br>
-        </p>
-      </div>
+
+    </div>
 
     <div class="section">
         <h5>Materials</h5>
@@ -164,18 +197,18 @@
             </div>
           </div>
 
-          <div class="row">
-              <br>
-              <a href="">Code</a>
-              <!-- <p>Code to be released soon!</p> -->
-          </div>
-
+        <div class="row">
+          <br>
+          <a href="">Code</a>
+          <!-- <p>Code to be released soon!</p> -->
         </div>
+
+      </div>
     </div>
 
     <br> <br>
     <div class="section">
-      <h5>Citation</h5> 
+      <h5>Citation</h5>
       <pre style="margin:0"><code>@article{nakayama2024aipparel,
           title={AIpparel: A Large Multimodal Generative Model for Digital Garments}, 
           author={Kiyohiro Nakayama and Jan Ackermann and Timur Levent Kesdogan 
@@ -183,18 +216,18 @@
                   and Guandao Yang and Gordon Wetzstein},
           journal = {Arxiv},
           year={2024}
-      }</code></pre>    			
+      }</code></pre>
     </div>
 
 
-  <!-- </div> -->
+    <!-- </div> -->
 
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/footable.min.js"></script>
 
     <script type="text/javascript">
-      jQuery(function($){
-          $('.table').footable();
+      jQuery(function ($) {
+        $('.table').footable();
       });
     </script>
     <script>
@@ -202,42 +235,43 @@
       document.addEventListener('DOMContentLoaded', domReady);
 
       function domReady() {
-          new Dics({
-              container: document.querySelectorAll('.b-dics')[0],
-              textPosition: 'right',
-              linesOrientation: "vertical",
-              arrayBackgroundColorText: ["#FFFFFF", "#000000"],
-              arrayColorText: ["#000000", "#FFFFFF"],
-              linesColor: "rgb(0,0,0)"
-          });
-          new Dics({
-              container: document.querySelectorAll('.b-dics')[1],
-              textPosition: 'right',
-              linesOrientation: "vertical",
-              arrayBackgroundColorText: ["#FFFFFF", "#000000"],
-              arrayColorText: ["#000000", "#FFFFFF"],
-              linesColor: "rgb(0,0,0)"
-          });
-          new Dics({
-              container: document.querySelectorAll('.b-dics')[2],
-              textPosition: 'right',
-              linesOrientation: "vertical",
-              arrayBackgroundColorText: ["#FFFFFF", "#000000"],
-              arrayColorText: ["#000000", "#FFFFFF"],
-              linesColor: "rgb(0,0,0)"
-          });
-          new Dics({
-              container: document.querySelectorAll('.b-dics')[3],
-              textPosition: 'right',
-              linesOrientation: "vertical",
-              arrayBackgroundColorText: ["#FFFFFF", "#000000"],
-              arrayColorText: ["#000000", "#FFFFFF"],
-              linesColor: "rgb(0,0,0)"
-          });
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[0],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[1],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[2],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
+        new Dics({
+          container: document.querySelectorAll('.b-dics')[3],
+          textPosition: 'right',
+          linesOrientation: "vertical",
+          arrayBackgroundColorText: ["#FFFFFF", "#000000"],
+          arrayColorText: ["#000000", "#FFFFFF"],
+          linesColor: "rgb(0,0,0)"
+        });
       }
-  </script>
+    </script>
 
     <!-- End Document
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  </body>
+</body>
+
 </html>
