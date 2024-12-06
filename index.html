@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/footable.standalone.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
   <!-- Favicon
          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -81,6 +84,44 @@
       overflow: scroll;
       overflow-y: hidden;
     }
+
+    .publication-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .link-block {
+      display: inline-block;
+    }
+
+    .external-link {
+      display: flex;
+      align-items: center;
+      background-color: #363636;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: none;
+      /* Ensure original text case */
+    }
+
+    .external-link .icon {
+      margin-right: 6px;
+    }
+
+    .external-link .icon i {
+      font-size: 16px;
+    }
+
+    .external-link:hover {
+      background-color: #4a4a4a;
+    }
   </style>
 </head>
 
@@ -116,6 +157,32 @@
       <sup>2</sup>ETH Zürich
     </p>
 
+
+    <!-- Additional Links Section -->
+    <div class="column has-text-centered">
+      <div class="publication-links">
+        <!-- arXiv Link -->
+        <span class="link-block">
+          <a href="https://arxiv.org/abs/2412.03937" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+          </a>
+        </span>
+        <!-- Code Link -->
+        <span class="link-block">
+          <a href="" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </span>
+
+      </div>
+    </div>
+
     <!-- <div class="venue">
         <p align="center"> International Conference on Computer Vision (ICCV), 2023 </p>
       </div> -->
@@ -125,9 +192,11 @@
       <!-- <br> -->
     </figure>
     <div class="caption">
-      <b>AIpparel</b> is a multimodal generative model for digital garments trained by fine-tuning a large multimodal
+      <b>AIpparel</b> is a multimodal generative model for digital garments trained by fine-tuning a large
+      multimodal
       model on a custom
-      sewing pattern dataset using a novel tokenization scheme for these patterns. AIpparel generates complex, diverse,
+      sewing pattern dataset using a novel tokenization scheme for these patterns. AIpparel generates complex,
+      diverse,
       high-quality sewing
       patterns based on multimodal inputs, such as text and images, and it unlocks new applications such as
       language-instructed sewing pattern
@@ -135,7 +204,7 @@
       <br>
       <br>
     </div>
-    <video width="100%" loop autoplay muted >
+    <video width="100%" loop autoplay muted>
       <source src="videos/brighter.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -143,13 +212,15 @@
 
       <h5>Abstract</h5>
       <p align="justify">
-        Apparel is essential to human life, offering protection, mirroring cultural identities, and showcasing personal
+        Apparel is essential to human life, offering protection, mirroring cultural identities, and showcasing
+        personal
         style.
         Yet, the creation of garments remains a time-consuming process, largely due to the manual work involved in
         designing them.
         To simplify this process, we introduce AIpparel, a large multimodal model for generating and editing sewing
         patterns.
-        Our model fine-tunes state-of-the-art large multimodal models (LMMs) on a custom-curated large-scale dataset of
+        Our model fine-tunes state-of-the-art large multimodal models (LMMs) on a custom-curated large-scale dataset
+        of
         over 120,000 unique garments,
         each with multimodal annotations including text, images, and sewing patterns.
         Additionally, we propose a novel tokenization scheme that concisely encodes these complex sewing patterns so
@@ -169,41 +240,19 @@
         <!-- <br> -->
       </figure>
       <div class="caption">
-        <b>AIpparel </b>uses a novel sewing pattern tokenizer (light blue region) to tokenize each panel into a set of
+        <b>AIpparel </b>uses a novel sewing pattern tokenizer (light blue region) to tokenize each panel into a set
+        of
         special
         tokens (light green region). Panel vertex positions and 3D transformations are incorporated using positional
-        embeddings (colored arrows) to the tokens. <b>AIpparel</b> takes in multimodal inputs, such as images and texts
-        (light orange region), to output sewing patterns using autoregressive sampling (light grey region). Finally, the
+        embeddings (colored arrows) to the tokens. <b>AIpparel</b> takes in multimodal inputs, such as images and
+        texts
+        (light orange region), to output sewing patterns using autoregressive sampling (light grey region). Finally,
+        the
         output is decoded to produce simulation-ready sewing patterns (light pink region).
         <br>
         <br>
       </div>
 
-    </div>
-
-    <div class="section">
-        <h5>Materials</h5>
-        <div class="container" style="width:95%">
-          <!-- Icon row -->
-          <div class="row">
-            <div class="two columns">
-              <a href="https://arxiv.org/pdf/2412.03937.pdf"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 108px;" src="images/paper.png"></a>
-            </div>
-          </div>
-          <!-- Link row -->
-          <div class="row">
-            <div class="two columns">
-              <a href="https://arxiv.org/abs/2412.03937">Paper</a>
-            </div>
-          </div>
-
-        <div class="row">
-          <br>
-          <a href="">Code</a>
-          <!-- <p>Code to be released soon!</p> -->
-        </div>
-
-      </div>
     </div>
 
     <br> <br>
