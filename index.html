@@ -53,6 +53,56 @@
 
   <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
   <style>
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: auto;
+    height: 150px;
+    align-items: center;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
     img {
       display: block;
     }
@@ -253,7 +303,6 @@
         <br>
       </p>
     </div>
-
     <div class="section">
       <h5>Dataset</h5>
       <figure>
@@ -270,6 +319,103 @@
       </div>
 
     </div>
+    <h6>Dataset Samples</h6>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset1.png">
+          <img src="images/dataset_figs/dataset1.png" alt="Cinque Terre">
+        </a>
+        <div class="desc">The <b>midi dress</b> features <b>a strapless top connected to a narrow waistband</b>, 
+          creating a defined high-rise waist. <b>The skirt extends from the waistband</b>, 
+          maintaining a fitted silhouette, and includes a <b>back slit</b> for ease of movement.
+        </div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset2.png">
+          <img src="images/dataset_figs/dataset2.png" alt="Forest">
+        </a>
+        <div class="desc">
+          The upper garment features a <b>mini length with long sleeves and an elevated waistline</b>. 
+          It includes a <b>curvy neckline and a similarly contoured back</b>, enhancing its distinctive shape. 
+          The garment is constructed with <b>lapels at the front</b>.
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset3.png">
+          <img src="images/dataset_figs/dataset3.png" alt="Northern Lights">
+        </a>
+        <div class="desc">This upper garment is a <b>mini-length style featuring short sleeves</b>. 
+          It is constructed with a <b>short, narrow trapezoidal neckline</b>. 
+          The garment includes a <b>waistband</b> that cinches the waist and connects the upper and lower body panels. 
+        </div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset4.png">
+          <img src="images/dataset_figs/dataset4.png" alt="Mountains">
+        </a>
+        <div class="desc">The <b>dress</b> features an <b>asymmetric neckline</b> extending into an <b>asymmetric top</b>. 
+          It has a <b>single short sleeve on the right side</b>. 
+          <b>The skirt portion is knee-length and constructed from five horizontal, tiered levels</b>.
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset5.png">
+          <img src="images/dataset_figs/dataset5.png" alt="Mountains">
+        </a>
+        <div class="desc">
+          The <b>midi jumpsuit</b> features a <b>strapless top</b> with a bodice constructed from multiple panels. The garment extends to a <b>midi length with wide-leg trousers</b>. 
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset6.png">
+          <img src="images/dataset_figs/dataset6.png" alt="Mountains">
+        </a>
+        <div class="desc">
+          The <b>dress</b> is of <b>midi length and features short sleeves</b>. 
+          A <b>waistband</b> is positioned at the high-rise waist. The skirt section includes both a <b>back slit</b> and a <b>side slit</b>.
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset7.png">
+          <img src="images/dataset_figs/dataset7.png" alt="Mountains">
+        </a>
+        <div class="desc">
+          The upper garment features <b>long sleeves</b> and a <b>short oval neckline</b> in the front, 
+           with a <b>similarly shaped back neckline</b>. It includes a <b>godet skirt with 8 panels</b>. 
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/dataset_figs/dataset8.png">
+          <img src="images/dataset_figs/dataset8.png" alt="Mountains">
+        </a>
+        <div class="desc">
+          The <b>dress</b> features an <b>asymmetric top</b> with a <b>neckline differing heights on either side</b>. 
+          <b>Both sleeves are long</b>, with the <b>right sleeve creating an angled, looser fit</b>.
+
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <br>
+      <br>
 
     <div class="section">
       <h5>Method</h5>
